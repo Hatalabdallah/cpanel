@@ -17,7 +17,7 @@ jobs:
         server: ftp.kyakabi.com  # Changed from www.kyakabi.com to match your FTP server
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /proposal.kyakabi.com/
+        server-dir: /
         protocol: ftp
         port: 21
         log-level: verbose
