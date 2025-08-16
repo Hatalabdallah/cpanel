@@ -15,6 +15,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: www.kyakabi.com
-        username: ${{ secrets.ftp_user }}
+        username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         server_dir: /proposal.kyakabi.com/
