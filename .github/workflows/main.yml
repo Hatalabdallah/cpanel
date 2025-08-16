@@ -14,10 +14,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: www.kyakabi.com
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
+        server: ftp.kyakabi.com  # Changed from www.kyakabi.com to match your FTP server
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /proposal.kyakabi.com/
         protocol: ftp
-        # Removed invalid security parameter for basic FTP
-        log-level: verbose  # Added for better debugging
+        port: 21
+        log-level: verbose
