@@ -17,4 +17,6 @@ jobs:
         server: www.kyakabi.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server_dir: /proposal.kyakabi.com/
+        server-dir: /proposal.kyakabi.com/  # Changed from server_dir to server-dir
+        protocol: ftp  # Explicitly specifying protocol
+        security: implicit  # Try 'implicit' or 'explicit' if using FTPS
